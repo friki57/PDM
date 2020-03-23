@@ -15,7 +15,7 @@ export default class componente extends Component {
       <View style = {styles.container}>
         <Image source = {imgLogo} style = {styles.image}></Image>
         <Text style = {styles.text}>
-Hola
+          Erick
         </Text>
       </View>
     );
@@ -26,7 +26,6 @@ Hola
 const styles = StyleSheet.create(
   {
     container: {
-      flex:1,
       alignItems: "center",
       justifyContent: 'center'
     },

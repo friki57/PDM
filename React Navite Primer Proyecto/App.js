@@ -24,16 +24,28 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-import Componente from './src/test/componente.js';
+import Input from './src/login/input.js';
 import Logo from './src/login/logo.js';
+import Cbba from './src/Img/cochabamba.jpg'
 
 const App: () => React$Node = () => {
   return (
     <>
       <View style = {styles.body}>
         <View style = {styles.container}>
-          <Componente style = {styles.box} nombre = "Puma"></Componente>
-          <Logo style = {styles.box}></Logo>
+          <Logo></Logo>
+          <Input
+            source={''}
+            placeholder = "Username"
+            secureTextEntry = {false}
+            autoCorrect = {false}
+            ></Input>
+          <Input
+            source={''}
+            placeholder = "Password"
+            secureTextEntry = {true}
+            autoCorrect = {false}
+            ></Input>
         </View>
       </View>
     </>
@@ -47,8 +59,14 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     backgroundColor: Colors.primary
   },
+  containers: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: 'center'
+  },
   container:
   {
+
     flex: .5,
     flexDirection: 'column',
     alignItems: 'center'
