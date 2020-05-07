@@ -1,11 +1,9 @@
-
 import React from 'react';
-import LoginPantalla from "./src/Vistas/Login/LoginPantalla"
 
+import MainNavigator from './src/Navigator/MainNavigator';
 const App: () => React$Node = () => {
   return (
-      <LoginPantalla></LoginPantalla>
+    <MainNavigator/>
   );
 };
-
 export default App;
