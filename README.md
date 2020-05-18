@@ -1,2 +1,2 @@
 # PDM
-Manejo de Programación de dispositivos Móviles
+Manejo de evidencias de la materia de Programación de dispositivos Móviles
